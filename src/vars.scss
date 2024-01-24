@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+:root{
+
+    /* Colors */
+
+    
+
+    /* bright */
+    --white: #ffffff;
+    --sea-salt-white: #F6F7F8;
+    --seashell-white: #F7EBE8;
+    --alice-white: #EBF2FA;
+    --anti-flash-white: #EFF1F3;
+    --platinum: #E6E6E9;
+    --taupe-gray: #9999A1;
+    --dim-gray: #66666E;
+    --ghost-white: #F7F5FB;
+    --beige: #E3E7D3;
+    --silver: #BDC2BF;
+    --battleship-gray: #989C94;
+    --french-gray: #CFCCD6;
+    --light-yellow: #FDFCDC;
+    --alabasta: #E0E2DB;
+
+
+    /* green */
+    --dark-slate-grey: #204E4A;
+    --dakr-spring-green: #297045;
+    --forest-green: #2E933C;
+    --mantis-green: #81C14B;
+
+    --dark-green: #132A13;
+    --hunter-green: #31572C;
+    --fern-grenn: #4F772D;
+    --moss-green: #90A955;
+    --mindaro: #ECF39E;
+    --turquoise: #3FDAB6;
+
+    /* yellow */
+
+    /* orange */
+    --buff: #ECBA82;
+    --tangerine: #F58A07;
+    --sandy-brown: #F9AB55;
+    --gamboga: #F1A208;
+
+    /* red */
+    --vermillion: #EF3E36;
+
+    /* blue */
+    --marine-blue: #005EFA;
+    --palentine-blue: #473BF0;
+    --celestial-blue: #20A4F3;
+    --polynesian-blue: #084887;
+    --cool-gray: #909CC2;
+    --barkley-blue: #052F5F;
+    --oxford-blue: #0A2342;
+
+    --uranian-blue: #ADD7F6;
+    --jordy-blue: #87BFFF;
+    --chef-blue: #3F8EFC;
+    --neon-blue: #2667FF;
+    --chrysler-blue: #3B28CC;
+    --vivid-sky-blue: #32C8E1;
+
+    /* gray */
+    --charcoal: #353A47;
+    --davy-gray: #525252;
+    --jet: #444140;
+    --raisin-black: #242124;
+    --slate-gray: #838A94ff;
+    --gunmetal: #313842ff;
+    --gunmetal-2: #212832ff;
+
+
+
+    /* dark */
+    --middark: #212A41;
+    --dark: #1A1D25;
+    --rich-dark: #011627;
+    
+
+
+    /* Color Variables*/
+    --background1: var(--gunmetal-2);
+    /*--background1: var(--middark);*/
+    /*--background2: var(--gunmetal-2);*/
+    --background2: var(--dark);
+    //--background3: var(--polynesian-blue);
+    --background3: var(--barkley-blue);
+    --foreground: var(--sea-salt-white);
+    --foreground2: var(--slate-gray);
+
+    //--highlight: var(--marine-blue);
+    //--highlight: var(--polynesian-blue);
+    --highlight: var(--oxford-blue);
+    --green: lime;
+    --yellow: var(--tangerine);
+    --red: var(--vermillion);
+
+
+    --navbarBackground1: rgb(2,0,36);
+    --navbarBackground2: linear-gradient(17deg, rgba(2,0,36,1) 0%, rgba(63,218,182,1) 41%, rgba(50,200,225,1) 100%, rgba(63,218,182,1) 100%);
+
+
+
+
+    --loginground1: var(--raisin-black);
+    --loginground2: var(--charcoal);
+    --loginground2-copy: var(--loginground2);
+    --loginground3: var(--jet);
+    --loginshadow1: var(--outsetShadow);
+    --loginshadow2: var(--insetShadow);
+    --loginshadow2-copy: var(--loginshadow2);
+    --login-radius: 36px;
+
+    --login-border-bright: 1px solid;
+    --login-border: none;
+    --login-border-bright-radius: var(--corner-radius);
+    --login-border-radius: 0px;
+
+
+
+    --insetShadow: inset 0px 0px 17px 11px rgba(8,8,8,0.32);
+    --outsetShadow: 18px 24px 24px 0px rgba(0,0,0,0.27);
+
+
+
+
+
+
+    /* <--- LOGIN GLOBAL SCROPE ---> */
+
+
+    --login-size-panel: 28rem;
+    
+    --login-label-font-size: 1.25rem;
+    --login-input-font-size: 0.75rem;
+    --login-info-font-size: 1.05rem;
+
+    --login-panel-gap: 1.37rem;
+    --login-panel-gap-medium: 0.66rem;
+    --login-panel-gap-small: 0.33rem;
+
+    --login-small-padding: 0.57rem;
+    --login-big-padding: 2.33rem;
+    --login-panel-padding: 3.4rem;
+
+    --login-checkbox-size: 1.5rem;
+    --login-switch-border: var(--login-panel-gap-small) solid var(--background2);
+
+
+
+    
+
+
+    /* <-- APP GLOBAL SCOPE --> */
+    
+    /* Width */
+    --size-relation: 78.5%;
+    --size-relation-invert: calc(100% - var(--size-relation) - 4 * var(--holder-gap));
+
+    --body-size: calc(100% - var(--navbar-size));
+
+
+    /* Height */
+    --header-size: 12%;
+    --main-size: 70%;
+    --footer-size: 18%;
+
+    --corner-radius: 15px;
+
+
+    /* Scrollbar */
+    --scrollbar-size: 20px;
+
+    --showFadeTile: visible;
+
+    /* NavBar */
+
+    /*--navbar-height: calc(100% - var(--holder-gap));*/
+    --navbar-height: 100%;
+    --navbar-size: calc(var(--navbar-button-height-small) * 1.61);
+    /*--navbar-size-extended: 17.5%;*/
+    --navbar-size-extended: calc(var(--navbar-size) * 1.61 * 2.5);
+    --navbar-size-min: 64px;
+    --navbar-time: 0.27s;
+    --navbar-border: solid var(--background2) var(--holder-gap);
+    --navbar-padding: 1.75rem;
+    --navbar-transition: all linear var(--navbar-time);
+    --navbar-button-border-radius: 8px;
+    --navbar-button-height-small: 2.7rem;
+    --navbar-button-height-large: 2.7rem;
+    --navbar-gap: calc(2.7rem / 1.61);
+    --nabbar-button-text-offset: -16rem;
+    --navbar-button-icon-offset: 0%;
+
+
+    /* SideHeader */
+    --side-header-font-size-big: var(--spacer-font-size-big);
+    --side-header-font-size-mid: 100%;
+    --side-header-font-size-small: var(--spacer-font-size-small);
+
+    /* DropSection */
+
+
+    /* Semester */
+    --semester-height: calc(var(--holder-min-height) * 6);
+    --semester-fade-tile-background-color-invalid: rgba(214, 73, 51, 0.3);
+    --semester-fade-tile-background-color-warning: rgba(232, 181, 60, 0.3);
+
+
+    /* MODUL */
+
+    $modul-count: 0;
+    $modul-underInt: 0;
+    $modul-overInt: 0;
+    --test: 61;
+    --modul-padding: 0.86rem;
+
+    --modul-max-width: 32rem;
+    --modul-max-height: var(--modul-max-width) / 1.61;
+
+    --modul-text-big: 1.1rem;
+    --modul-text-medium: 0.92rem;
+    --modul-text-small: 0.80rem;
+
+    --modul-margin-small: 0.46rem;
+    --modul-marign-medium: 0.56rem;
+    --modul-margin-big: 0.66rem;
+
+    --modul-button-padding: 0.17rem;
+    //--modul-button-padding: 17%;
+    --modul-button-border-radius: 12px;
+    --modul-button-width: 20%;
+
+    --modul-highlight-animation: var(highlightMod 2s 0.7s);
+    --modul-spawn-animation: var(spawnModul 300ms ($modulNum * 60ms) ease-in-out forwards);
+
+    /* Spacer */
+    --spacer-font-size-big: 1.57rem;
+    --spacer-font-size-mid: 1.25rem;
+    --spacer-font-size-small: 0.75rem;
+    --spacer-icon-rotation-speed: 0.3s;
+
+    /* Holder */
+    --holder-min-width: 16rem;
+    --holder-min-height: var(--holder-min-width);
+    --holder-min-height-3: calc(var(--holder-min-height) / 2);
+    --holder-min-height-6: var(--holder-min-height);
+    --holder-min-height-9: calc(var(--holder-min-height) * 1.5);
+    --holder-min-height-12: calc(var(--holder-min-height) * 2);
+    --holder-header-min-height: 4rem;
+    --holder-padding: 1rem;
+    --holder-gap: 0.25rem;
+    --holder-border: solid var(--holder-gap) var(--background2);
+    --holder-name-font-size: 0.8em;
+    --holder-id-font-size: 0.6em;
+    --holder-lp-font-size: 0.58em;
+
+
+    /* Status Text */
+    --status-text-size: 1.17rem;
+    --status-text-blendout: 2.4s;
+    --status-text-blendout-delay: 0.7s;
+
+    /* LP Text */
+    --lpText-size: 1.37rem;
+
+    /* Button */
+    --button-padding: 1rem;
+
+    /* General Overview */
+    --generel-overview-padding: 1.2rem;
+    --genreal-overview-font-size: 1.3rem;
+    --genreal-overview-gap: 1rem;
+
+
+    /* Icons */
+    --complete-icon-size: 2.6rem;
+
+
+    /* Options */
+    --options-label-font-size: 1.56rem;
+    --options-option-font-size: 1.06rem;
+
+    /* Conflicted Mod */
+    --conflicted-popup-width: 60%;
+    --conflicted-popup-height: 60%;
+    --conflicted-popup-left: 20%;
+    --conflicted-mod-button-padding: 0.85rem;
+    --conflicted-mod-padding: 0.52rem;
+    --conflicted-mod-font-size: 0.87rem;
+    //--conflicted-popup-left: calc(var(--conflicted-popup-width) - 100%);
+    --conflicted-mod-height: 2.4rem;
+    --conflicted-mod-gap: 1.77rem;
+    --conflictedModButton-width: 6.32rem;
+    --conflictedModButton-height: 93%;
+
+
+
+
+
+    /* <--- Utility ---> */
+    --highlight-delay: 0.07s;
+    --highlight-transition: all linear var(--highlight-delay);
+
+    --semester-underlayer-pointer: auto;
+    
+
+    /* <--- Font Sizes --> */
+    --tinyFont: 0.56rem;
+    --smallFont: 0.72rem;
+    --mediumFont: 0.89rem;
+    --bigFont: 1.04rem;
+    --capitalFont: 1.37rem;
+    
+
+    background-color: var(--background2);
+}
+
+
+.hidden{
+
+    display: hidden;
+}
+.none{
+
+    display: none;
+}
+
+.tinyFont{
+
+    font-size: var(--tinyFont);
+}
+.smallFont{
+
+    font-size: var(--smallFont);
+}
+.mediumFont{
+
+    font-size: var(--mediumFont);
+}
+.bigFont{
+
+    font-size: var(--bigFont);
+}
+.capitalFont{
+
+    font-size: var(--capitalFont);
+}
+.greenFont{
+
+    color: var(--green);
+}
+.yellowFont{
+
+    color: var(--yellow);
+}
+.redFont{
+
+    color: var(--red);
+}
+.strikethrough{
+
+    text-decoration: line-through;
+}
+
+
+.verticalFlex{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--holder-gap);
+}
+.horizontalFlex{
+
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--holder-gap);
+}
+
+.redBackground{
+
+    background-color: var(--red);
+}
+.yellowBackground{
+
+    background-color: var(--yellow);
+}
+.greenBackground{
+
+    background-color: var(--green);
+}
+.background1{
+
+    background-color: var(--background1);
+}
+.background2{
+
+    background-color: var(--background2);
+}
+.background2{
+
+    background-color: var(--background3);
+}
+
+.background1.override{
+
+    background-color: var(--background1);
+}

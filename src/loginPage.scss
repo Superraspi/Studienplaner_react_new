@@ -1,0 +1,381 @@
+@import url("vars.scss");
+
+
+*{
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+
+    display: flex;
+    background-color: var(--loginground1);
+    /*background-image: url("../src/assets/uni_background.jpg");*/
+    background-size: cover;
+    background-blend-mode: lighten;
+    width: 100vw;
+    height: 100vh;
+}
+
+.panel{
+
+    display: flex;
+    margin: auto;
+    width: calc(var(--login-size-panel) * 2);
+    height: var(--login-size-panel);    
+    gap: var(--login-panel-gap-small);
+}
+
+.loginPanel{
+
+    width: 50%;
+    background-color: var(--loginground2);
+    border-radius: var(--login-radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.cubePanel{
+
+    width: 50%;
+    overflow: hidden;
+    border-radius: var(--login-radius);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+
+
+
+.actionCard{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.loginLogo{
+
+    height: 33%;
+}
+.loginLogo>.logoContainer{
+
+    height: 100%;
+    padding: var(--login-big-padding);
+}
+.logo.small{
+
+    
+}
+
+
+
+
+
+.loginWrapper{
+
+    height: 67%;
+    box-shadow: var(--loginshadow2);
+    border-bottom-left-radius: var(--login-radius);
+}
+
+
+.loginSwitch{
+
+    height: 12.7%;
+    color: var(--foreground);
+    display: flex;
+}
+.showLoginCardButton{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    //only in bright mode
+    border: var(--login-border);
+    border-radius: var(--login-border-radius);
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-right: 0;
+    border-bottom-right-radius: 0;
+}
+.showLoginCardButton.active{
+
+    box-shadow: var(--loginshadow2-copy);
+
+    //only in bright mode 
+    border: var(--login-border);
+    border-radius: var(--login-border-radius);
+}
+.showRegisterCardButton{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    //only in bright mode
+    border: var(--login-border);
+    border-radius: var(--login-border-radius);
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    border-bottom-right-radius: 0;
+}
+.showRegisterCardButton.active{
+
+    box-shadow: var(--loginshadow2-copy);
+
+    //only in bright mode
+    border: var(--login-border);
+    border-radius: var(--login-border-radius);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loginCard{
+
+    display: flex;
+    flex-direction: column;
+    //gap: var(--login-panel-gap);
+    align-items: center;
+    justify-content: center;
+}
+
+.labelCon{
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.inputPanel{
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--login-panel-gap-medium);
+    padding: var(--login-big-padding);
+    padding-bottom: calc(0.5 * var(--login-big-padding));
+}
+
+.username{
+
+    color: var(--foreground);
+}
+.username.text{
+
+    font-size: var(--login-label-font-size);
+
+}
+.username.input{
+
+    color: var(--foreground);
+}
+
+input[type="text"], input {
+
+    padding: var(--login-small-padding);
+    background-color : var(--loginground2-copy);
+    border: 0;
+    font-size: var(--login-input-font-size); 
+    border-radius: var(--login-radius);
+    border-radius: 15px;
+    box-shadow: var(--loginshadow2);
+    outline: none;
+}
+input::placeholder{
+
+    color: var(--foreground);  
+}
+input:hover {
+
+}
+
+
+
+.password{
+
+    color: var(--foreground);
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.password.text{
+
+    font-size: var(--login-label-font-size);
+}
+.password.input{
+
+    color: var(--foreground);
+}
+.passwordWrapper{
+
+    
+}
+.passwordToggleButton{
+
+    position: absolute;
+    left: 70%;
+    
+}
+.passwordIcon{
+
+    
+}
+
+
+.loginButtonWrapper{
+
+    display: flex;
+    position: relative;
+    gap: var(--login-panel-gap-medium);
+}
+
+.loginButton{
+
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: var(--login-input-font-size);
+    color: var(--foreground);
+    background-color: var(--background3);
+    padding: var(--login-small-padding);
+    border-radius: var(--corner-radius);
+    transition: 0.19s all;
+    //box-shadow: var(--loginshadow1);
+}
+.loginButton:hover{
+
+    background-color: var(--highlight);
+    transition: 0.25s all;
+}
+
+.loginButton.theme{
+
+    width: auto;
+}
+
+
+.loginInfo{
+
+    position: relative;
+    color: var(--loginground2);
+    font-size: var(--login-info-font-size);
+}
+.loginInfo.red{
+
+    color: var(--red);
+}
+.loginCAS{
+
+    color: var(--highlight);   
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.registerCard{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87.3%;
+}
+.inputPanel2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--login-big-padding);
+    padding-bottom: calc(0.5 * var(--login-big-padding));
+    gap: var(--login-panel-gap-small);
+}
+.password2{
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--login-panel-gap-small);
+}
+.passwordWrapper2{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--foreground);
+}
+.passwordToggleButton2{
+
+    position: absolute;
+    left: 70%;
+    
+}
+.passwordCheck{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.samePWCheck{
+
+    position: absolute;
+    color: var(--green);
+    left: 80%;
+}
+.registerButton{
+
+    width: 100%;
+    position: relative;
+    font-size: var(--login-input-font-size);
+    color: var(--foreground);
+    background-color: var(--background3);
+    padding: var(--login-small-padding);
+    border-radius: var(--corner-radius);
+    transition: 0.19s all;
+    box-shadow: var(--loginshadow1);
+}
+.registerButton:hover{
+
+    background-color: var(--highlight);
+    transition: 0.25s all;
+}
+.registerInfo{
+
+    position: relative;
+    margin-bottom: 1rem;
+    color: var(--loginground2);
+    font-size: var(--login-info-font-size);
+}
+.registerInfo.red{
+
+    color: var(--red);
+}
+
+.dropDownWrapperLogin{
+
+    background-color: var(--loginground2-copy);
+    box-shadow: var(--loginshadow2);
+    border-radius: var(--corner-radius);
+    border: 0;
+    font-size: var(--smallFont);
+    padding: var(--login-small-padding);
+    width: 100%;
+    text-align: left;
+}
